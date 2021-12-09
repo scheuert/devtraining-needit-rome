@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="0" type="collection">
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Sales" sequence="3" value="sales"/>
+                <element inactive_on_update="false" label="Branch North" sequence="4" value="branch_north"/>
+                <element inactive_on_update="false" label="Branch West" sequence="5" value="branch_west"/>
+                <element inactive_on_update="false" label="Branch East" sequence="6" value="branch_east"/>
+                <element inactive_on_update="false" label="Branch South" sequence="7" value="branch_south"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources 1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="Human Resources 2" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="Facilities 1" sequence="2" value="facilities1"/>
+                <element inactive_on_update="false" label="Facilities 2" sequence="3" value="facilities2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="4" value="legal1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal2"/>
+                <element inactive_on_update="false" label="Branch North 1" sequence="6" value="branch_north1"/>
+                <element inactive_on_update="false" label="Branch North 2" sequence="7" value="branch_north2"/>
+                <element inactive_on_update="false" label="Branch West 1" sequence="8" value="branch_west1"/>
+                <element inactive_on_update="false" label="Branch West 2" sequence="9" value="branch_west2"/>
+                <element inactive_on_update="false" label="Branch East 1" sequence="10" value="branch_east1"/>
+                <element inactive_on_update="false" label="Branch East 2" sequence="11" value="branch_east2"/>
+                <element inactive_on_update="false" label="Branch South 1" sequence="12" value="branch_south1"/>
+                <element inactive_on_update="false" label="Branch South 2" sequence="13" value="branch_south2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
